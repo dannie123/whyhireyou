@@ -14,6 +14,9 @@
 		</select>
 		<select name="categories" id="select_category">
 			<option> select category </option>
+				@foreach($categories as $category)
+					<option value="{{ $category->id }}">{{ $category->name }}</option>
+				@endforeach
 		</select>
 		<button type="submit"> sumbit </button>
 	</form>
@@ -25,15 +28,15 @@
 		@foreach ($jobs as $job)
 			<li class="first">
 				<div class="type">
-					<span style="background:{{ $job->type->color }}"> {{ $jobs->type->name }} </span>
+					<span style="background:{{ $job->type->color }}"> {{ $job->type->name }} </span>
 				</div>
 				<div class="description">
-					<h5> {{ $jobs->title }} ({{ $jobs->city }}, {{ $jobs->state }})</h5>
+					<h5> {{ $job->title }} ({{ $job->city }}, {{ $job->state }})</h5>
 					<p><span id="list_date">
 						{{{ date('Y-m-d', strtotime($job->created_at))}}}
 					</span></p>
 					{!! str_limit($job->description) !!} 
-					{!! link_to_route('job', 'Read More &rsaquo;', array($job->id)) !!}
+					{!! link_to_route('home', 'Read More &rsaquo;', array($job->id)) !!}
 					
 				</div>
 			</li>

@@ -36,13 +36,13 @@
 			<!-- Menu Horizontal -->
 			<ul class="menu">
 				<li>
-					<a href="#"><i class="fa fa-home"></i> home </a></li>
+					<a href="/"><i class="fa fa-home"></i> home </a></li>
 				<li>
-					<a href="#"><i class="fa fa-desktop"></i> browse jobs </a></li>
+					<a href="/"><i class="fa fa-desktop"></i> browse jobs </a></li>
 				<li>
-					<a href="#"><i class="fa fa-user"></i> register </a></li>
+					<a href="auth/register"><i class="fa fa-user"></i> register </a></li>
 				<li>
-					<a href="#"><i class="fa fa-key"></i> login </a></li>
+					<a href="auth/login"><i class="fa fa-key"></i> login </a></li>
 			</ul>
 		</div>
 
