@@ -21,8 +21,9 @@
 			</div>
 			<div class="col_6 column right welcome">
 				@if(Auth::user()['id'])
-					<h6> welcome <strong>{{ $user->name }}</strong></h6>
-					{!! link_to_route('auth/logout', 'logout') !!}
+					<h6> welcome <strong>{{ Auth::user()['name']}}</strong></h6>
+				 {{-- link_to_route('auth/logout/{id}', 'logout', array(Auth::user()['id'])) --}} 
+					{!! link_to_route('auth.logout', 'logout', array(Auth::user()['id'])) !!}
 				@endif
 			</div>	
 			<div class="col_2 column right">

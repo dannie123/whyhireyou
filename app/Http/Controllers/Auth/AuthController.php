@@ -5,6 +5,8 @@ use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
+use App\Models\User;
+
 class AuthController extends Controller {
 
 	/*
@@ -35,14 +37,18 @@ class AuthController extends Controller {
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
 
-	// public function Login(){
- //        if(Auth::attempt(['email' => Input::get('email'), 'password' => Input::get('password')])){
+	protected $redirectPath = 'user/{id}/dashboard';
 
- //    return Redirect::to('/user/1/dashboard');
+	// public function Login($id){
+ //        if(Auth::attempt(['email' => Input::get('email'), 'password' => Input::get('password')]))
+
+ //    		return Redirect::to('/user/{id}/dashboard');
+	// }
 
  //    public function Login(){
  //        if(Auth::attempt(['email' => Input::get('email'), 'password' => Input::get('password')])){
 
- //    return Auth::user();
+ //    return $user = Auth::user();
+	// }
 
 }

@@ -126,7 +126,7 @@
 		</nav>
         <div class="menu-wrap">
             <nav class="profile-menu">
-                <div class="profile"><img src="{{ assets('assets/images/avatar1.png' }} width="52" alt="David Green"/><span>David Green</span></div>
+                <div class="profile"><img src="assets/images/avatar1.png" width="52" alt="David Green"/><span>David Green</span></div>
                 <div class="profile-menu-list">
                     <a href="#"><i class="fa fa-star"></i><span>Favorites</span></a>
                     <a href="#"><i class="fa fa-bell"></i><span>Alerts</span></a>
