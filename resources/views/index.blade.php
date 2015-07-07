@@ -25,7 +25,7 @@
 <h3> latest job listings </h3>
 
 	<ul id="listings">
-		@foreach ($jobs as $job)
+		@foreach (Job::get() as $job)
 			<li class="first">
 				<div class="type">
 					<span style="background:{{ $job->type->color }}"> {{ $jobs->type->name }} </span>
@@ -43,4 +43,4 @@
 		@endforeach
 	</ul>
 
-@endsection
+@stop

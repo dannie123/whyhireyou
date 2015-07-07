@@ -17,7 +17,7 @@ class AdminJobController extends Controller {
 	{
 		$jobs = Job::paginate(10);
 
-		return view('jobs.index', compact('jobs'));
+		return view('admin.jobs.index', compact('jobs'));
 	}
 
 	/**
@@ -27,7 +27,7 @@ class AdminJobController extends Controller {
 	 */
 	public function create()
 	{
-		return view('jobs.create');
+		return view('admin.jobs.create');
 	}
 
 	/**
@@ -44,7 +44,7 @@ class AdminJobController extends Controller {
 
 		$job->save();
 
-		return redirect()->route('jobs.index')->with('message', 'Item created successfully.');
+		return redirect()->route('admin.jobs.index')->with('message', 'Item created successfully.');
 	}
 
 	/**
@@ -57,7 +57,7 @@ class AdminJobController extends Controller {
 	{
 		$job = Job::findOrFail($id);
 
-		return view('jobs.show', compact('job'));
+		return view('admin.jobs.show', compact('job'));
 	}
 
 	/**
@@ -70,7 +70,7 @@ class AdminJobController extends Controller {
 	{
 		$job = Job::findOrFail($id);
 
-		return view('jobs.edit', compact('job'));
+		return view('admin.jobs.edit', compact('job'));
 	}
 
 	/**
@@ -88,7 +88,7 @@ class AdminJobController extends Controller {
 
 		$job->save();
 
-		return redirect()->route('jobs.index')->with('message', 'Item updated successfully.');
+		return redirect()->route('admin.jobs.index')->with('message', 'Item updated successfully.');
 	}
 
 	/**
@@ -102,7 +102,7 @@ class AdminJobController extends Controller {
 		$job = Job::findOrFail($id);
 		$job->delete();
 
-		return redirect()->route('jobs.index')->with('message', 'Item deleted successfully.');
+		return redirect()->route('admin.jobs.index')->with('message', 'Item deleted successfully.');
 	}
 
 }
