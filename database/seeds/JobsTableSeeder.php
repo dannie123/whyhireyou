@@ -12,7 +12,7 @@ class JobsTableSeeder extends Seeder {
 
     public function run()
     {
-        Job::create(array(
+        App\Models\Job::create(array(
             'category_id' => '1',
             'user_id' => '1',
             'type_id' => '1',
@@ -25,7 +25,7 @@ class JobsTableSeeder extends Seeder {
 
         ));
 
-        Job::create(array(
+        App\Models\Job::create(array(
             'category_id' => '2',
             'user_id' => '3',
             'type_id' => '2',
@@ -38,7 +38,7 @@ class JobsTableSeeder extends Seeder {
 
         ));
 
-        Job::create(array(
+        App\Models\Job::create(array(
             'category_id' => '1',
             'user_id' => '3',
             'type_id' => '3',
@@ -51,7 +51,7 @@ class JobsTableSeeder extends Seeder {
 
         ));
 
-        Job::create(array(
+        App\Models\Job::create(array(
             'category_id' => '1',
             'user_id' => '3',
             'type_id' => '1',
@@ -64,7 +64,7 @@ class JobsTableSeeder extends Seeder {
 
         ));
 
-        Job::create(array(
+        App\Models\Job::create(array(
             'category_id' => '3',
             'user_id' => '4',
             'type_id' => '1',
@@ -76,7 +76,7 @@ class JobsTableSeeder extends Seeder {
             'contact_email' => 'test2@gmail.com'
         ));
 
-        Job::create(array(
+        App\Models\Job::create(array(
             'category_id' => '4',
             'user_id' => '3',
             'type_id' => '3',
@@ -88,7 +88,7 @@ class JobsTableSeeder extends Seeder {
             'contact_email' => 'john@doe.com'
         ));
 
-        Job::create(array(
+        App\Models\Job::create(array(
             'category_id' => '4',
             'user_id' => '5',
             'type_id' => '3',

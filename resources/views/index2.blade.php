@@ -14,6 +14,9 @@
 		</select>
 		<select name="categories" id="select_category">
 			<option> select category </option>
+{{-- 			<?php foreach(Category::get() as $category) : ?>
+				<option value="{{ $category->id }}">{{ $category->name }}</option>
+			<?php endforeach; ?> --}}
 		</select>
 		<button type="submit"> sumbit </button>
 	</form>
@@ -22,7 +25,7 @@
 <h3> latest job listings </h3>
 
 	<ul id="listings">
-		@foreach ($jobs as $job)
+		@foreach (Job::get() as $job)
 			<li class="first">
 				<div class="type">
 					<span style="background:{{ $job->type->color }}"> {{ $jobs->type->name }} </span>

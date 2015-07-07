@@ -40,4 +40,9 @@ class AuthController extends Controller {
 
  //    return Redirect::to('/user/1/dashboard');
 
+ //    public function Login(){
+ //        if(Auth::attempt(['email' => Input::get('email'), 'password' => Input::get('password')])){
+
+ //    return Auth::user();
+
 }

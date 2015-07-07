@@ -7,7 +7,7 @@ class Type extends Model {
 	protected $table = 'types';
 
 	public function jobs(){
-        return $this->hasMany('App\models\Job');
+        return $this->hasMany('App\Models\Job');
     }
 
 }

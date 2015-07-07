@@ -12,19 +12,19 @@ class CategoriesTableSeeder extends Seeder {
 
     public function run()
     {
-    	Category::create(array(
+    	App\Models\Category::create(array(
             'name' => 'IT'
         ));
 
-        Category::create(array(
+        App\Models\Category::create(array(
             'name' => 'tourism'
         ));
 
-        Category::create(array(
+        App\Models\Category::create(array(
             'name' => 'construction'
         ));
 
-        Category::create(array(
+        App\Models\Category::create(array(
             'name' => 'accounting'
         ));
     }

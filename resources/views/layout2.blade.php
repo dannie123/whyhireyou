@@ -12,6 +12,21 @@
 	
 </body>
 </html>
+
+<!-- 	<?php
+		//echo $this->Html->meta('icon');
+
+		//echo $this->Html->css('kickstart');
+		//echo $this->Html->css('style');
+
+		//echo $this->Html->script('jquery');
+		//echo $this->Html->script('kickstart');
+
+		//echo $this->fetch('meta');
+		//echo $this->fetch('css');
+		//echo $this->fetch('script');
+	?> -->
+
 </head>
 <body>
 	<div id="container" class="grid">
@@ -34,7 +49,25 @@
 
 		<div class="col_12 column">
 			<!-- Menu Horizontal -->
+<!-- 			<ul class="menu">
+				<li <?php //echo ($this->here == '/jobsBoard/' || $this->here == '/jobsBoard/jobs') ? 'class="current"' : ''; ?> >
+					<a href="{{ route('/') }}"><i class="fa fa-home"></i> home </a></li>
+				<li <?php //echo ($this->here == '/jobsBoard/jobs/browse') ? 'class="current"' : '' ?> >
+					<a href="{{ route('/jobs/browse') }}"><i class="fa fa-desktop"></i> browse jobs </a></li>
+				<li <?php //echo ($this->here == '/jobsBoard/users/register') ? 'class="current"' : '' ?> >
+					<a href="{{ route('/users/register') }}"><i class="fa fa-user"></i> register </a></li>
+				<li <?php //echo ($this->here == '/jobsBoard/users/login') ? 'class="current"' : '' ?> >
+					<a href="<?php //echo $this->webroot;?>users/login"><i class="fa fa-key"></i> login </a></li>
+			</ul> -->
 			<ul class="menu">
+{{-- 				<li>
+					<a href="{{ route('home') }}"><i class="fa fa-home"></i> home </a></li>
+				<li>
+					<a href="{{ route('home') }}"><i class="fa fa-desktop"></i> browse jobs </a></li>
+				<li>
+					<a href="{{ route('auth/register') }}"><i class="fa fa-user"></i> register </a></li>
+				<li>
+					<a href="{{ route('auth/login') }}"><i class="fa fa-key"></i> login </a></li> --}}
 				<li>
 					<a href="#"><i class="fa fa-home"></i> home </a></li>
 				<li>

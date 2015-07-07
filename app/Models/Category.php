@@ -7,7 +7,7 @@ class Category extends Model {
 	protected $table = 'categories';
 
 	public function jobs(){
-        return $this->hasMany('App\models\Job');
+        return $this->hasMany('App\Models\Job');
     }
 
 }

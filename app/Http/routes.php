@@ -32,7 +32,7 @@ Route::group(['prefix' => "user", 'before' => 'middleware'], function(){
 });
 // Route::post('/login', 'AuthController@Login');
 
-Route::get('/', 'JobsController@index');
+Route::get('/', ['as' => 'home', 'uses' => 'JobsController@index']);
 
 Route::get('/{id}', 'JobsController@show');
 
